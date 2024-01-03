@@ -1,11 +1,16 @@
+const posts = (states = { posts: [] }, action) => {
 
-export default (posts= [], action) => {
-    switch(action.type){
-        case 'FETCH_ALL':
-            return posts;
-        case 'CREATE':
-            return posts;
+    switch (action.type) {
+        case "FETCH_ALL":
+            return {
+                ...states,
+                posts: {postName: "this is post title", id: "3435"},
+            };
+        case "CREATE": {
+            return "something"
+        }
         default:
-            return posts;
+            return states;
     }
-}
+};
+export default posts;

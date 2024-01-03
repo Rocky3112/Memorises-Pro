@@ -1,10 +1,10 @@
 import { createTheme } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 const theme = createTheme();
-export default makeStyles((theme) => ({
+export default makeStyles(() => ({
     root: {
       '& .MuiTextField-root': {
-        margin: theme.smMargin(1),
+        margin: theme.spacing(1),
       },
     },
     paper: {
